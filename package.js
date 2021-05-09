@@ -1,14 +1,14 @@
 'use strict';
 
 Package.describe({
-  summary: 'Meteor sign up and sign in templates core package.',
-  version: '1.14.2',
-  name: 'useraccounts:core',
-  git: 'https://github.com/meteor-useraccounts/core.git',
+  summary: 'Fork of useraccounts:core for Firestorm',
+  version: '1.0.0',
+  name: 'meteorhubdotnet:firestorm-useraccounts-core',
+  git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-core',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0.3');
+  api.versionsFrom('METEOR@2.2');
 
   api.use([
     'accounts-base',
@@ -79,7 +79,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-  api.use('useraccounts:core@1.14.2');
+  api.use('meteorhubdotnet:firestorm-useraccounts-core');
 
   api.use([
     'accounts-password',
