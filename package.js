@@ -2,13 +2,13 @@
 
 Package.describe({
   summary: 'Fork of useraccounts:core for Firestorm',
-  version: '1.0.4',
+  version: '1.0.5',
   name: 'meteorhubdotnet:firestorm-useraccounts-core',
   git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-core',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@2.2');
+  api.versionsFrom('METEOR@2.3.6');
 
   api.use([
     'accounts-base',
